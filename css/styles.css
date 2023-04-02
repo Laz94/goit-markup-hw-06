@@ -46,7 +46,19 @@ body {
   background-color: white;
 }
 
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* index */
 .page {
@@ -1067,20 +1079,7 @@ flex-grow: 0;
   outline: transparent;
 }
 .checkbox{
-  width: 338px;
-height: 16px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.04em;
-color: #757575;
-flex: none;
-order: 1;
-flex-grow: 0;
 
-padding-left: 8px;
 }
 .footer-mail {
   display: flex;
@@ -1119,6 +1118,7 @@ border-radius: 4px;
 margin-top: 15px;
 margin-left:24px;
 padding: 8px 16px 8px 24px;
+margin-top: 39px;
 }
 .kontrakt{
   font-family: 'Roboto';
@@ -1162,4 +1162,49 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 padding-bottom: 16px;
+}
+.check-text{
+display: flex;
+height: 16px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.04em;
+color: #757575;
+flex: none;
+order: 1;
+flex-grow: 0;
+gap: 8px;
+}
+.check-text::before {
+content:'' ;
+width: 16px;
+height: 16px;
+border: 1.25px solid #2E2F42;
+border-radius: 2px;
+display: block;
+}
+.modal-check{
+  transition: background-color 9000ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-flex{
+  display: flex;
+
+}
+.modal-check:checked + .check-text::before {
+background-color: #404BBF;
+border: none;
+background-image: url(../images/Vector1.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+.modal-check:focus + .check-text::before {
+  border-color: #404BBF;
+ 
+
+  }
+.checkbox{
+  color: #4D5AE5;
 }
