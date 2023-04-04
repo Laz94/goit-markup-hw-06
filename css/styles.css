@@ -904,6 +904,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 24px;
+  padding-top: 72px;
 }
 .modal-title {
   font-size: 18px;
@@ -911,9 +912,8 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: center;
-  margin-bottom: 15px;
-  width: 360px;
-height: 24px;
+  /* padding-top: 24px; */
+
 left: 553px;
 top: 160px;
 font-family: 'Roboto';
@@ -924,13 +924,11 @@ line-height: 24px;
 text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
-padding-top: 80px;
-margin-bottom: 15px;
 
 
 }
 .modal-form {
-  padding-top: 8px;
+  /* padding-top: 16px; */
   gap: 8px;
 }
 .modal-close {
@@ -947,7 +945,7 @@ margin-bottom: 15px;
   border-radius: 50%;
   background: #E7E9FC;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 20px;
+  
 }
 
 .modal-close:hover,
@@ -956,7 +954,6 @@ margin-bottom: 15px;
 }
 /* fbfb */
 .modal-field {
-  margin-bottom: 10px;
   margin-top: 8px;
   
 }
@@ -1067,8 +1064,16 @@ height: 24px;
 
 .modal-label-text {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 12px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: #8E8F99;
+
 }
 
 .modal-textarea {
@@ -1103,10 +1108,21 @@ height: 24px;
   cursor: pointer;
   margin: 0 auto;
   justify-content: center;
+  margin-top: 24px;
 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  
-  }
 .submit-footer { 
 margin-left: 24px;
 font-style: normal;
